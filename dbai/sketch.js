@@ -55,7 +55,7 @@ function generate() {
   
   // Check if there's something to send
   if (txt.length > 1) {
-    rTxt = txt;
+    rTxt = txt+',';
   }
   else
   {
@@ -104,6 +104,7 @@ function generate() {
   return s.splice(0,s.length-1);
 }
 
+// 
 function ListThisArray(h)
 {
 let ret = "";
