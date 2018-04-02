@@ -48,7 +48,7 @@ function generate() {
   // Grab the original text
   let original = textInput.value();
   // Make it to lower case
-  let txt = original.toLowerCase()+',';
+  let txt = original.toLowerCase().replace(/ /g,'_');+',';
   
   // var that we will use to send to our network
   let rTxt = "";
@@ -61,6 +61,8 @@ function generate() {
   {
     rTxt = makeid()+',';
   }
+
+  print(rTxt);
 
   // Check if there's something to send
     // This is what the LSTM generator needs
